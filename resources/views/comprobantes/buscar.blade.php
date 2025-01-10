@@ -89,12 +89,12 @@
                                 <tbody>
                                     @foreach ($comprobantes as $comprobante)
                                         <tr class="border-b hover:bg-gray-50">
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $loop->iteration }}</td>
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->numero_comprobante }}</td>
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->banco }}</td>
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->monto }}</td>
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->fecha_transferencia }}</td>
-                                            <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->tipo_transaccion }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $loop->iteration }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->numero_comprobante }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->banco }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->monto }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->fecha_transferencia }}</td>
+                                            <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->tipo_transaccion }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

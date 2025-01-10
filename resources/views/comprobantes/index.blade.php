@@ -35,13 +35,13 @@
                                 <tbody>
                                     @foreach ($comprobantes as $comprobante)
                                     <tr class="border-b hover:bg-gray-50">
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $loop->iteration }}</td>
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->numero_comprobante }}</td>
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->banco }}</td>
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->monto }}</td>
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->fecha_transferencia }}</td>
-                                        <td class="px-6 py-4 text-sm text-gray-500">{{ $comprobante->tipo_transaccion }}</td>
-                                        <td class="px-6 py-4 text-sm font-medium">
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $loop->iteration }}</td>
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->numero_comprobante }}</td>
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->banco }}</td>
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->monto }}</td>
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->fecha_transferencia }}</td>
+                                        <td class="px-6 py-4 text-center text-sm text-gray-500">{{ $comprobante->tipo_transaccion }}</td>
+                                        <td class="px-6 py-4 text-center text-sm font-medium">
                                             <a href="{{ route('comprobantes.edit', $comprobante) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
                                             <form action="{{ route('comprobantes.destroy', $comprobante) }}" method="POST" class="inline delete-form">
                                                 @csrf
